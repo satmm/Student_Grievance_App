@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup2"
+    tools:context=".activity.Home">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/student"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+
+        android:background="@drawable/background_bg"
+        android:text="Student "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/admin"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/background_bg"
+        android:gravity="center"
+        android:text="Admin "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="299dp"
+        android:layout_height="296dp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="54dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

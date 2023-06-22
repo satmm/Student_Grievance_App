@@ -40,13 +40,11 @@ public class dashboard extends AppCompatActivity  {
     private FirebaseUser user;
     private DatabaseReference reference;
     private String uid;
-
     private ActionBarDrawerToggle drawerToggle;
     private NavigationView navigationView;
     TextView tex1,tex2;
    Button b1;
    ImageView i;
-
     private CardView c1, c2, c3, c4, c5, c6;
     ImageView i1;
     private Toolbar toolbar;
@@ -62,10 +60,6 @@ public class dashboard extends AppCompatActivity  {
         c5=findViewById(R.id.card5);
         c6=findViewById(R.id.card6);
         i=findViewById(R.id.home);
-//        View headerView = navigationView.getHeaderView(0);
-//        tex1=headerView.findViewById(R.id.n1);
-//        tex2=headerView.findViewById(R.id.n2);
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();

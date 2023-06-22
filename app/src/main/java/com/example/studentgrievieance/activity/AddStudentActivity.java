@@ -21,10 +21,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 
 public class AddStudentActivity extends AppCompatActivity {
-
     private EditText nameEditText, usnEditText, phoneEditText, departmentEditText, semEditText;
     private Button saveButton;
-
     private DatabaseReference databaseReference;
 
     @Override
@@ -39,10 +37,8 @@ public class AddStudentActivity extends AppCompatActivity {
         semEditText = findViewById(R.id.sem);
         saveButton = findViewById(R.id.button);
 
-        // Initialize the Firebase Realtime Database
         databaseReference = FirebaseDatabase.getInstance().getReference("students");
 
-        // Set an onClickListener for the save button
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

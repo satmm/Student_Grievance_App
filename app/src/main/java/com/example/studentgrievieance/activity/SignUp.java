@@ -38,7 +38,6 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class SignUp extends AppCompatActivity {
-
     private EditText mobileNumberEditText;
     private boolean otpSent = false;
     private Button sendOTPButton;
@@ -57,15 +56,6 @@ public class SignUp extends AppCompatActivity {
     private String countryCode = "+91";
     private String id = "";
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-
-//    private DatabaseReference databaseReference;
-//    private String mobileNumber;
-//    private String verificationCode;
-//    private String countrycode="+91";
-//    private String id="";
-//    FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
